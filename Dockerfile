@@ -1,6 +1,9 @@
 FROM datadog/agent:7
 
 RUN printenv
+RUN echo $HOSTNAME
+RUN echo $HOME
+RUN echo $DISPLAY
 
 ENV DD_APM_ENABLED=true
 ENV NON_LOCAL_TRAFFIC=true
