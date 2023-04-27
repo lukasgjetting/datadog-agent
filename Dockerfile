@@ -1,5 +1,7 @@
 FROM datadog/agent:7
 
+RUN printenv
+
 ENV DD_APM_ENABLED=true
 ENV NON_LOCAL_TRAFFIC=true
 ENV DD_APM_NON_LOCAL_TRAFFIC=true
